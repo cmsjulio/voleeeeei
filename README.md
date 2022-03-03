@@ -1,5 +1,5 @@
-# Angular Crash Course
+# Angular Crash Course - Traversy Media
 
-## Do [Youtube]{https://www.youtube.com/watch?v=3dHNOWTI7H8}
+## Do [Youtube](https://www.youtube.com/watch?v=3dHNOWTI7H8)
 
 ## Parei em create a task service. (~45')
