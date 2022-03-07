@@ -15,3 +15,7 @@ Pra rodar, fazer 'npm run server'.
 
 Após configurado o servidor, inserido o HttpClient para permitir requisição GET.
 
+### Delete
+Inserida função de deletar item com Input, Output, EventEmitter (no task-item.component).
+
+Inserido em tsconfig/compilerOptions os parametros para evitar erros de initializar e any.
