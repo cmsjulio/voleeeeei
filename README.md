@@ -24,3 +24,6 @@ Inserido em tsconfig/compilerOptions os parametros para evitar erros de initiali
 Adicionado css condicional com reminder:task.reminder (se reminder for true, aplicar css de task.reminder, conforme em task-item.component.css.)
 
 Adicionada interação com service, para alterar na db o estado do objeto quando houver doubleclick.
+
+### Add
+Criado formulário, configurado input, eventos de Input e Output e service.
