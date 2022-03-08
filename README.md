@@ -19,3 +19,6 @@ Após configurado o servidor, inserido o HttpClient para permitir requisição G
 Inserida função de deletar item com Input, Output, EventEmitter (no task-item.component).
 
 Inserido em tsconfig/compilerOptions os parametros para evitar erros de initializar e any.
+
+### Reminder
+Adicionado css condicional com reminder:task.reminder (se reminder for true, aplicar css de task.reminder, conforme em task-item.component.css.)
