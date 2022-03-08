@@ -27,3 +27,6 @@ Adicionada interação com service, para alterar na db o estado do objeto quando
 
 ### Add
 Criado formulário, configurado input, eventos de Input e Output e service.
+
+### Botão Add
+Configurado para exibir e ocultar html do add-task -- utilizando UiService.
