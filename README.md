@@ -2,7 +2,7 @@
 
 ## Do [Youtube](https://www.youtube.com/watch?v=3dHNOWTI7H8)
 
-## Parei em create a task service. (~45')
+## Terminado.
 
 ### Task service:
 Aleterada forma de obter os dados -- agora utilizando o TaskService.
