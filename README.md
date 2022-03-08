@@ -30,3 +30,6 @@ Criado formulário, configurado input, eventos de Input e Output e service.
 
 ### Botão Add
 Configurado para exibir e ocultar html do add-task -- utilizando UiService.
+
+### Router
+Configurado router na mão, about page e footer.

@@ -1,22 +1,28 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Doctors Appointment",
-      "day": "May 5th at 2:39pm",
-      "reminder": true
+      "text": "Consulta Médica",
+      "day": "5 de Março às 18h",
+      "reminder": true,
+      "id": 4
     },
     {
-      "id": 2,
-      "text": "Meeting at School",
-      "day": "May 6th at 1:39pm",
-      "reminder": true
+      "text": "Jiu Jitsu",
+      "day": "Terça-feira, 16h",
+      "reminder": true,
+      "id": 5
     },
     {
-      "id": 3,
-      "text": "Food Shopping",
-      "day": "May 7th at 12:39pm",
-      "reminder": true
+      "text": "Futebol de 7",
+      "day": "Sábado, 18/Maio, 14h",
+      "reminder": false,
+      "id": 6
+    },
+    {
+      "text": "Treinamento",
+      "day": "10 de Junho",
+      "reminder": true,
+      "id": 7
     }
   ]
 }
