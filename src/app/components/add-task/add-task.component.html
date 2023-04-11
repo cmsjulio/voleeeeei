@@ -1,16 +1,16 @@
 <form *ngIf="showAddTask" class="add-form" (ngSubmit)="onSubmit()">
     <div class="form-control">
-        <label for="text">Task</label>
-        <input type="text" name="text" id="text" [(ngModel)]="text" placeholder="Add Task">
+        <label for="text">Jogador</label>
+        <input type="text" name="text" id="text" [(ngModel)]="nome" placeholder="Nome do jogador">
     </div>
     <div class="form-control">
-        <label for="day">Day & Time</label>
-        <input type="text" name="day" id="day" [(ngModel)]="day" placeholder="Add Day & Time">
+        <label for="day">Nível</label>
+        <input type="number" min="1" max="10" name="day" id="day" [(ngModel)]="nivel" placeholder="Nível do jogador">
     </div>
     <div class="form-control form-control-check">
-        <label for="reminder">Set Reminder</label>
+        <label for="reminder">Incluir no sorteio?</label>
         <input type="checkbox" name="reminder" id="reminder" [(ngModel)]="reminder" placeholder="Checkbox">
     </div>
-    
-    <input type="submit" value="Save Task" class="btn btn-block">
-</form> 
+
+    <input type="submit" value="Adicionar jogador" class="btn btn-block">
+</form>
