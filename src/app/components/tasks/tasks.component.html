@@ -1,6 +1,20 @@
 <app-add-task (onAddTask)="addTask($event)"></app-add-task>
-<app-task-item *ngFor="let task of tasks" 
+
+
+<h4 style="text-align:center">
+  {{this.tasksParaSorteio.length}} jogadores selecionados
+</h4>
+
+<br>
+
+
+<app-task-item *ngFor="let task of tasks"
 [task]="task"
 (onDeleteTask)="deleteTask(task)"
 (onToggleReminder)="toggleReminder(task)"
 ></app-task-item>
+
+
+<div style="text-align: center;">
+<app-button (btnClick)="realizarSorteio()" text="SORTEIO!"></app-button>
+</div>
