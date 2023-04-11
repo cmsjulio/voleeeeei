@@ -1,53 +1,50 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Task } from 'src/app/Task';
 import { UiService } from 'src/app/services/ui.service';
 import { Subscription } from 'rxjs';
+import { Task } from 'src/app/Task';
 
 @Component({
   selector: 'app-add-task',
   templateUrl: './add-task.component.html',
-  styleUrls: ['./add-task.component.scss']
+  styleUrls: ['./add-task.component.scss'],
 })
 export class AddTaskComponent implements OnInit {
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
-  text: string;
-  day: string;
-  reminder: boolean=false;
+  nome: string;
+  nivel: number;
+  reminder: boolean = false;
   showAddTask: boolean;
   subscription: Subscription;
 
-  constructor(private uiService:UiService) { 
+  constructor(private uiService: UiService) {
     this.subscription = this.uiService
-    .onToggle()
-    .subscribe((value) => (this.showAddTask = value))
-   }
-
-  ngOnInit(): void {
+      .onToggle()
+      .subscribe((value) => (this.showAddTask = value));
   }
 
-  onSubmit(){
-    if(!this.text){
-      alert('Please add a task.');
+  ngOnInit(): void {}
+
+  onSubmit() {
+    if (!this.nome) {
+      alert('Informe o nome do jogador.');
       return;
     }
 
-    const newTask ={
-      text:this.text,
-      day:this.day,
-      reminder: this.reminder
+    if (!Number.isFinite(this.nivel)) {
+      alert('Informe o nível do jogador (número).');
+      return;
     }
 
-  
-  this.onAddTask.emit(newTask);
+    const newTask = {
+      nome: this.nome,
+      nivel: this.nivel,
+      reminder: this.reminder,
+    };
 
-  this.text='';
-  this.day='';
-  this.reminder=false;
+    this.onAddTask.emit(newTask);
 
-
-
+    this.nome = '';
+    this.nivel = 0;
+    this.reminder = false;
   }
-
-
-
 }
